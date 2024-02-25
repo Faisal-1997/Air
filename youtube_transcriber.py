@@ -1,5 +1,12 @@
 import streamlit as st
+import requests
 import youtube_dl
+import requests
+import pprint
+from configure import auth_key
+from time import sleep
+from streamlit_lottie import st_lottie
+from PIL import Image
 
 # Define ydl_opts if needed
 ydl_opts = {}
@@ -48,10 +55,12 @@ def main():
         left_column, right_column = st.columns(2)
         with left_column:
             img = "https://up6.cc/2024/02/170887225454832.jpg"
-            st.image(img, caption="عدد السيارارت ", use_column_width=True)
+            st.image(img, caption=" ", use_column_width=True)
         with right_column:
-            img1 = "https://up6.cc/2024/02/170887225456083.jpg"
-            st.image(img1, caption="عدد الأشخاص", use_column_width=False)
+            img1 = "https://up6.cc/2024/02/170887747210641.jpg"
+            st.image(img1, caption=" ", use_column_width=False)
+            
+
 
 if __name__ == "__main__":
     main()
